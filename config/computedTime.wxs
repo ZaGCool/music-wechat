@@ -1,0 +1,15 @@
+
+module.exports = {
+  toStr:function(n){
+    return Math.floor(n) < 10 ? "0" + Math.floor(n) : "" + Math.floor(n);
+  },
+  computedLrc: function (index) {
+    let lrc = getApp().globalData.currentLrc
+    if (lrc === "el-" + index) {
+      return "white"
+    } else {
+      return ""
+    }
+
+  }
+}

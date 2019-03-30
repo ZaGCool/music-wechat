@@ -1,0 +1,19 @@
+/* pages/index/index.wxss */
+page {
+  background-color: black;
+}
+.wrap {
+  padding:25rpx;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin:20rpx 0;
+  border: 1px solid #666;
+}
+.index {
+  color:white;
+  font-size:25px;
+}
+.item {
+  padding-left:10px;
+  font-size:16px;
+  color: white;
+}

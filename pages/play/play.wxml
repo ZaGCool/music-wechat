@@ -1,0 +1,21 @@
+<!--pages/play/play.wxml-->
+<wxs module="foo" src="../../config/computedTime.wxs" />
+<view class='wrap'>
+    <image src='{{song.al.picUrl}}' class='rot' style="animation-play-state:{{isRot}}"></image>
+  <slider min="0" max="{{duration}}" step='1' value='{{current}}'
+  block-size='16'
+  bindchanging='changing'
+  bindchange='changed'
+  ></slider>
+  <view class='opertion'>
+    <text class='currentTime'>{{foo.toStr(current/60)}}:{{foo.toStr(current%60)}}</text>
+    <text class='totalTime'>{{foo.toStr(duration/60)}}:{{foo.toStr(duration%60)}}</text>
+  </view>
+  <view class='coms'>
+    <image src='../../assets/images/mode.png'class='mode' bindtap='mode_tap'></image>
+    <image src='../../assets/images/prev.png' class='prev' bindtap='prev_tap'></image>
+    <image src='{{playSrc}}' class='play' bindtap='play_tap'></image>
+    <image src='../../assets/images/next.png' class='next' bindtap='next_tap'></image>
+    <image src='../../assets/images/menu.png' class='menu' bindtap='menu_tap'></image>
+  </view>
+</view>

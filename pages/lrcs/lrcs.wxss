@@ -1,0 +1,30 @@
+/* pages/lrcs/lrcs.wxss */
+page {
+  margin: 0;
+  height: 100%;
+  background-color: black;
+}
+
+.wrap {
+  height: 100%;
+  color: white;
+  opacity: 0.7;
+  overflow: hidden;
+}
+
+.scroll {
+  position: absolute;
+  left: 0;
+  height:600rpx;
+  top:200rpx;
+}
+.scroll view {
+  text-align: center;
+  font-size: 14px;
+  padding:10px;
+}
+
+.white {
+  color: red;
+  text-shadow: 0.5px 0.5px 0px yellow;
+}

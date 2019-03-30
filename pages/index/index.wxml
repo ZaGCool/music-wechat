@@ -1,0 +1,6 @@
+<!--pages/index/index.wxml-->
+<!-- 循环type歌榜数组 绑定key为索引  绑定tap事件 绑定id自定义数据 -->
+<view wx:for="{{type}}" wx:key="index" class='wrap' bindtap='tap' data-id='{{index}}'>
+  <text class='index'>{{ index+1 }}.</text>
+  <text class='item'>{{ item[index] }}</text>
+</view>

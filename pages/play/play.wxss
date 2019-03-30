@@ -1,0 +1,64 @@
+/* pages/play/play.wxss */
+page {
+  background-color: #000;
+
+}
+.wrap image.rot{
+  width: 650rpx;
+  height:650rpx;
+  border: 30rpx solid rgba(255,255,255, .7);
+  box-sizing: border-box;
+  margin:20rpx 50rpx;
+  border-radius: 50%;
+}
+.rot {
+  animation: doSun 10s infinite linear;
+}
+@keyframes doSun{
+			from{transform:rotate(0);}
+			to{transform:rotate(360deg);}
+}
+.wrap .opertion {
+  display: flex;
+  justify-content: space-between;
+  color:white;
+  font-size:14px;
+}
+
+.wrap .opertion text{
+  margin: 0 10px;
+}
+
+.coms {
+  display: flex;
+  justify-content: space-between;
+}
+.coms .mode {
+  width:40px;
+  height:34px;
+  margin-top:46px;
+  margin-left:10px;
+
+}
+.coms .prev {
+  width:25px;
+  height:32px;
+  margin-top:46px;
+
+}
+.coms .play {
+  width:100px;
+  height:112px;
+
+}
+.coms .next {
+ width:25px;
+ height:34px;
+  margin-top:46px;
+}
+.coms .menu {
+  width:40px;
+  height:34px;
+  margin-top:46px;
+  margin-right:10px;
+}

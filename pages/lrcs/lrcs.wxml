@@ -1,0 +1,12 @@
+<!--pages/lrcs/lrcs.wxml-->
+<wxs module='foo' src='../../config/computedTime.wxs' />
+
+<view class='wrap' style='background:url("../../assets/images/music.png") no-repeat center bottom;background-attachment: fixed;'>
+      <scroll-view scroll-y='true' class='scroll'
+      scroll-into-view='{{currentLrc}}'
+      scroll-with-animation='true'>
+      <view class='{{currentLrc==="el-"+index?"white":""}}' id='{{"el-"+index}}' wx:for='{{lrcs}}' wx:key='{{index}}'>{{lrcs[index]}}</view>
+    </scroll-view>
+
+  
+</view>

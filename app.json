@@ -1,0 +1,16 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/list/list",
+   "pages/play/play",
+    "pages/lrcs/lrcs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "ZaG-App",
+    "navigationBarTextStyle": "white"
+  }
+}

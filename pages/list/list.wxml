@@ -1,0 +1,8 @@
+<!--pages/list/list.wxml-->
+<view wx:for='{{m_list}}' wx:key="id" class='wrap' bindtap='tap' data-id='{{item.id}}'>
+  <image src='{{item.al.picUrl}}'></image>
+  <view class="introduce">
+    <view>歌曲 - {{item.name}}</view>
+    <view>歌手 - {{item.ar[0].name}}</view>
+  </view>
+</view>
